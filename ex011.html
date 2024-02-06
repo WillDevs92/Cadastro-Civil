@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Civil</title>
+    <style>
+        body {
+            background: yellowgreen;
+
+        }
+
+        input {
+            font: normal 10pt Arial;
+            width: 100px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            background-color: brown;
+            width: 250px;
+            border-radius: 30px;
+            line-height: 50px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            width: 700px;
+            line-height: 150px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Cadastro de civis </h1>
+    <h2>Registro Civil, para <strong>Brasileiros</strong> e <strong>Estrangeiros</strong> !</h2>
+    Nome Completo: <input type="text" value="Nome:" name="txt1" id="txt1"> <br>
+    Sua Nacioalidade: <input type="text" value="Nacionalidade:" name=" txt2" id="txt2"><br>
+    Concluir:<input type="button" value="Verificar" onclick="Verificar()">
+    <div id="res">
+
+    </div>
+
+
+    <script>
+         
+        function Verificar() {
+            var país = 'Brasil'
+            var nome = window.document.querySelector('input#txt1')
+            var Nacional = window.document.querySelector('input#txt2')
+            var na1 = text(Nome.value)
+            var na2 = text(Nacional.value)
+            res.innerHTml = `<p>A sua nacionalidade é ${Nacional}</p>`
+            if (país != 'Brasil') {
+                res.innerHTML = `Você é Brasileiro`
+            } else {
+                res.innerHTML = `Você é estrangeiro`
+            }
+           
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
